@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Hye-ri</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background:whitesmoke;
+        }
+        body{
+            background-color:white;
+            width: 1000px;
+            margin: 0 auto;
+            padding: 0 0;
+        }
+        #navbar{
+            height:220px;
+            width:100%;
+            background:white;
+        }
+        #navbar>img{
+            height:100%;
+            width:450px;
+            background: none;
+            margin-right: 30px;
+            display: block;
+            float: left;
+        }
+        #menu{
+            height: 50px;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background:pink;
+        }
+        #menu .dts{
+            height: 100%;
+            width:205px;
+            color:black ;
+            background:pink;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 50px;
+            font-size:0.9rem;
+            text-align:right;
+            float:left;
+        }
+        #menu .arr{
+            width:10px;
+            height:10px;
+            border-top: 25px solid transparent;
+            border-bottom:  25px solid transparent;
+            border-left: 25px solid pink;
+            background:wheat;
+            float:left;
+        } 
+        #menu .dts a{
+            color:black;
+            text-decoration: none;
+        }
+        #menu .running-text{
+            width:770px;
+            height:100%;
+            background: wheat;
+            float:left;
+            overflow: hidden;
+        }
+        #menu .running-text>ul{
+            height: 100%;
+            list-style-type: none;
+            position: relative;
+            animation: runnings 100s infinite;
+            animation-timing-function: linear;
+            white-space: nowrap;
+            line-height: 50px;
+        }
+        #menu .running-text>ul:hover{
+            animation-play-state: paused;
+        }
+        @keyframes runnings {
+            0%{left:100%;}
+            100%{left:-10000px;}
+        }
+        #menu .running-text>ul>li{
+            display: inline-block;
+            margin-left:20px;
+            font-weight: bold;
+        } 
+        #menu .running-text>ul>li::before{
+            content:">> ";
+            color:black;
+        }
+        #menu .running-text>ul>li>a{
+            color:black;
+        }
+        #content{
+            height:500px;
+            background: white;
+            margin-top: 10px;
+        } 
+        #content .content-left{
+            height:100%;
+            width:400px;
+            margin-right: 16px;
+            margin-left: 30px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            float: left;
+            position: relative;
+        }
+        #content .content-left>img{
+            height: 450px;
+            width:350px; 
+        }
+        #content .content-right{
+            width: 530px;
+            height:100%;
+            float: left;
+            background:white
+        }
+        #content .content-right .top{
+            height:50px;
+            width: 280px;
+            margin-top: 20px;
+        }
+        #content .content-right .top>p{
+            height: 50px;
+            float: left;
+            text-align: justify;
+            line-height: 50px;
+            font-weight: bold;
+            font-size:1rem;
+            padding: 0 10px;
+            color:black; 
+        }
+        #content .content-right .bottom{
+            height:400px;
+            width: 100%;
+            margin-left: 10px;
+            /*background: pink;*/
+        }
+        #content .content-right .bottom>p{
+            height:25px;
+            width: 100%;
+            text-align: justify;
+            line-height: 20px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            background:none;
+            margin-top:5px;
+            margin-bottom:7px;
+            border:none;
+            display: block;
+            float:left; 
+        } 
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <img src="Navbar2.jpg" alt="">
+        <img src="Navbar2-Right.png" alt="">  
+    </div>
+    <div id="menu">
+        <div class="dts"> <a href="">
+            Diễn viên-Ca sĩ Lee-hyeri</a></div>
+        <div class="arr"></div>
+        <div class="running-text">
+            <ul>
+                <li><a href="">Tiểu sử</a></li>
+                <li><a href="">Tác phẩm âm nhạc</a></li>
+                <li><a href="">Tác phẩm phim điện ảnh</a></li>
+                <li><a href="">Tác phẩm phim truyền hình</a></li>
+                <li><a href="">Cut videos tham gia chương trình thực tế</a></li>
+            </ul>    
+        </div>
+    </div>
+    <div id="content">
+        <div class="content-left">
+            <img src="Anh3 content.jpg" alt="">
+        </div>
+        <div class="content-right">
+            <div class="top">
+                <p><b>Tiểu sử diễn viên-ca sĩ Lee-hyeri:</b></p>
+            </div>
+            <div class="bottom">
+                <p>Tên thật: Lee Hyeri - Hangul: 이혜리</p>
+                <p>Ngày sinh: 9/6/1994</p>
+                <p>Quê quán: Gyeonggi, Hàn Quốc</p>
+                <p>Công ty quản lý: Creative Group ING</p>
+                <p>Vai trò: Ca sĩ(Thành viên nhóm nhạc nữ Girl's Day) - Diễn viên</p>
+                <p>Học vị: Trường Nghệ thuật biểu diễn Seoul và Đại học Konkuk</p>
+                <p>Instagram:<a href="">hyeri_0609</a></p>
+                <p>Giải thưởng diễn xuất: giải Daesang năm 2017; nữ diễn viên chính xuất sắc nhất năm 2017; nữ diễn viện được yêu thích nhất;...  </p>
+                <p>Tác phẩm phim đóng chính: <i>Lời hồi đạp 1988; Bạn cùng phòng của tôi là Gumiho; Ký sự Thanh Xuân;...</i></p>  
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

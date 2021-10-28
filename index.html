@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reply 1988-Lời Hồi Đáp 1988</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        :root{
+            --maincolor:greenyellow;
+            --navmenuheight:35px; 
+        }
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background:whitesmoke;
+        }
+        body{
+            background-color:whitesmoke;
+            width: 1100px;
+            margin: 0 auto;
+            padding: 0 8px;
+        }
+        #navbar{
+            height:var(--navmenuheight);
+            background:yellowgreen;
+        }
+        #navbar .navbarmenu{
+            height: 100%;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            float: left;
+            background: greenyellow;
+        }
+        #navbar .navbarmenu>ul{
+            list-style-type: none;
+            height: 100%;
+        }
+        #navbar .navbarmenu>ul>li{
+            line-height: 35px;
+            float: left;
+            margin-left: 30px;
+            text-transform: uppercase;
+            height: 100%;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        #navbar .navbarmenu>ul>li>a{
+            color: brown;
+            text-decoration: none;
+        }
+        #banner{
+            height: 200px;
+            width: 100%;
+            background:white;
+        }
+        #banner .large-banner{
+            float: left;
+            margin-left: 60px;
+            width: 500px;
+            height: 154px;
+        }
+        #banner .small-banner{
+            height: 100%;
+            width: 500px;
+            float:left;
+        }
+        #banner .small-banner img{
+            width:100%;
+            height: 100%;
+        }
+        #main-menu{
+            height:50px;
+            background: var(--maincolor);   
+        }  
+        #main-menu>ul{
+            height: 100%;
+            list-style-type: none;
+        }
+        #main-menu>ul>li{
+            height:100%;
+            float:left; 
+            margin-left: 18px;
+            text-align: center;
+            line-height:50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size:0.9rem;
+            padding: 0 10px;
+            color:brown;
+            position: relative; 
+        }
+        #main-menu>ul>li>a{
+            color:brown;
+            text-decoration: none;
+        }
+        #main-menu>ul>li:hover{
+            color:red;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #main-menu>ul>li:hover >a{
+            color:red;
+        }
+        #main-menu>ul>li>ul{
+            list-style-type:none;
+            width:px;
+            position: absolute;
+            z-index: 1;
+            left:0;
+            display:none;
+            background:var(--maincolor);
+        }
+        #main-menu>ul>li:hover >ul{
+            display:block;
+            padding:8px 0;
+        }
+        #main-menu>ul>li>ul>li{
+            font-size:0.9rem;
+            text-transform: none;
+            font-weight: normal;
+            height: 35px;
+            line-height: 35px;
+            background:var(--maincolor);
+            color:greenyellow;
+            text-align: left;
+            padding:0 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            position: relative;
+        }
+        #main-menu>ul>li>ul>li::before{
+            content:">> ";
+        }
+        #main-menu>ul>li>ul>li:hover{
+            color:red;
+            background:greenyellow;
+            animation: slide 1s;
+        }
+        #main-menu>ul>li>ul>li:hover>a{
+            color:brown;
+        }
+        #main-menu>ul>li>ul>li>a{
+            color:brown;
+            text-decoration: none;
+        }
+        @keyframes slide {
+            0%{left:8px;}
+            20%{left:-6.5px;}
+            40%{left:5px;}
+            60%{left:-3.5px;}
+            80%{left:2px;}
+            100%{left:0;}
+        } 
+        #newsfeed{
+            height: 35px;
+            margin: 6px 0;
+            background:greenyellow;
+        } 
+        #newsfeed .dts{
+            height: 100%;
+            width:180px;
+            color:brown ;
+            background:yellowgreen;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 35px;
+            font-size:0.9rem;
+            text-align:right;
+            float:left;
+        }
+        #newsfeed .arr{
+            width:10px;
+            height:10px;
+            border-top: 17.5px solid transparent;
+            border-bottom:  17.5px solid transparent;
+            border-left: 17.5px solid yellowgreen;
+            background: greenyellow;
+            float:left;
+        } #newsfeed .dts a{
+            color:brown;
+            text-decoration: none;
+        }
+        #newsfeed .running-text{
+            width:880px;
+            height:100%;
+            background: greenyellow;
+            float:left;
+            overflow: hidden;
+        }
+        #newsfeed .running-text>ul{
+            height: 100%;
+            list-style-type: none;
+            position: relative;
+            animation: runnings 100s infinite;
+            animation-timing-function: linear;
+            white-space: nowrap;
+            line-height: 35px;
+        }
+        #newsfeed .running-text>ul:hover{
+            animation-play-state: paused;
+        }
+        @keyframes runnings {
+            0%{left:100%;}
+            100%{left:-10000px;}
+        }
+        #newsfeed .running-text>ul>li{
+            display: inline-block;
+            margin-left:20px;
+            font-weight: bold;
+        } 
+        #newsfeed .running-text>ul>li::before{
+            content:">> ";
+            color:brown;
+        }
+        #newsfeed .running-text>ul>li>a{
+            color:brown;
+        } 
+        #main-content{
+            height: 500px;
+            background:white;
+        }
+        #main-content .left-content{
+            height: 100%;
+            width: 500px;
+            margin-right:16px;
+            float:left;
+            position: relative;
+        }
+        #main-content .left-content img{
+            height: 500px;
+            width:100%;
+        }
+        #main-content .right-content{
+            width: 550px;
+            height:100%;
+            float:left;
+        }
+        #main-content .right-content .top-content{
+            height:50px;
+            width:140px;
+            background:white;
+        }
+        #main-content .right-content .top-content>p{
+            height: 40px;
+            float: left;
+            text-align: justify;
+            line-height: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size:0.9rem;
+            padding: 0 10px;
+            color:brown; 
+        }
+        #main-content .right-content .bottom-content{
+            height:450px;
+            width:100%;
+            background: white;
+        }
+        #main-content .right-content .bottom-content>p{
+            height: 100%;
+            float:left;
+            text-align: justify;
+            line-height: 25px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            padding: 0 10px;    
+        }
+        #ads{
+            height:45px;
+            width: 100%;
+            float: left;
+            background: white;
+        }
+        #ads .dts{
+            height:35px;
+            width:100%;
+            margin-top: 8px;
+            background:greenyellow;
+        }
+        #ads .dts>p{
+            height: 35px;
+            width:160px;
+            line-height: 35px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.9rem;
+            float: left;
+            color:brown;   
+        }
+        #brands{
+            height:200px;
+            margin: 6px 0;
+            width:100%;
+            background:khaki;
+        }
+        #brands>img{
+            height:155px;
+            width: 200px;
+            background:none;
+            margin-left:7px;
+            margin-right:9px;
+            margin-top:3px; 
+            border:none;
+            display: block;
+            float:left;    
+        }
+        #footer{
+            height:190px;
+            width:100%;
+            background: greenyellow;
+            margin-top: 8px;
+        }
+        #footer .leftfooter{
+            float: left;
+            margin-top: 45px;
+            color:brown;
+            margin-left: 20px;
+        }
+        #footer .leftfooter .line2{
+        }
+        #footer .leftfooter .line2>span{
+            color:brown;
+            font-size: 1rem;
+        }
+        #footer .leftfooter .line2>p{
+            margin-top: 10px;
+           margin-left: 5px;
+           display: inline-block;
+        }
+        #footer .leftfooter .line3{
+        }
+        #footer .leftfooter .line3>p{
+            margin-top: 10px;
+            margin-left: 5px;
+            display: inline-block;
+        }
+        #footer .leftfooter .line3>p>span{
+            font-size: 1rem;
+        }
+        #footer .rightfooter{
+           margin-left: 200px;
+           margin-top: 30px;
+           float: left;
+        }
+        #footer .rightfooter .line1{
+            color: brown;
+            font-weight: bold;
+        }
+        #footer .rightfooter .line2{
+            display: inline-block;
+            margin-top: 10px;
+        }
+        #footer .rightfooter .line2>a{
+            color: brown;
+            font-size: 2rem;
+            margin-left: 25px;
+	       text-decoration:none;
+        }
+        #footer .rightfooter .line3>p{
+            font-weight: bold;
+            margin-top: 20px;
+            color:brown
+        }
+        #footer .rightfooter .line3>p{
+            color:brown;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div class="navbarmenu">
+            <ul>
+                <li><a href="">Ngày lên sóng</a></li>
+                <li><a href="">Đơn vị sản xuất</a></li>
+                <li><a href="">Danh sách nhà tài trợ</a></li>
+                <li><a href="">Thông tin chi tiết</a></li>
+                <li><a href="">Reply 1997</a></li>
+                <li><a href="">Reply 1994</a></li>
+                <li><a href="">Reply 1988</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="banner">
+        <div class="large-banner">
+                <img src="Anh NAVBAR.jpg" alt="">
+        </div> 
+        <div class="samll-banner">
+                <img src="Anh NAVBAR3.jpg" alt="">
+        </div>   
+    </div>
+    <div id="main-menu">
+        <ul>
+             <li>Trailer
+                 <ul>
+                    <li><a href="">Reply 1997</a></li>
+                    <li><a href="">Reply 1994</a></li>
+                    <li><a href="">Reply 1988</a></li>
+                </ul>
+            </li>
+            <li>Diễn viên
+                <ul>
+                    <li><a href="DienVien.html">Lee Hye-ri</a></li>
+                    <li><a href="">Park Bo-Gum</a></li>
+                    <li><a href="">Ryu Jun-yeol</a></li>
+                </ul>
+            </li>
+            <li><a href="">Cảnh hậu trường</a></li>
+            <li><a href="">Họp báo ra mắt</a></li>
+            <li><a href="">Danh sách giải thưởng</a></li>
+            <li><a href="">Review</a></li>
+            <li><a href="">Tỷ lệ rating</a></li>
+            </ul>
+    </div> 
+    <div id="newsfeed">
+        <div class="dts"> <a href="">
+            Tập phim mới cập nhật</a></div>
+        <div class="arr"></div>
+        <div class="running-text">
+            <ul>
+                <li><a href="">Series phim truyền hình dài tập Reply của đạo diễn Shin Won-ho đã chính thức lên sóng</a></li>
+                <li><a href="">Đánh giá của giới chuyên môn</a></li>
+                <li><a href="">Tổng hợp Link Serves</a></li>
+            </ul>    
+        </div>
+    </div>  
+    <div id="main-content">
+        <div class="left-content">
+            <img src="Anh MainContent.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <div class="top-content">
+                <p><b>NỘI DUNG PHIM:</b></p>
+            </div>
+            <div class="bottom-content">
+            <p><i>Tương tự như Reply 1997 và Reply 1994, Reply 1988 khai thác sâu sắc mối quan hệ giữa những gia đình cùng sống chung trong một khu xóm nhỏ ở Hàn vào năm 1988. Tuy nhiên, Reply 1988 không chỉ khắc họa về mối tình đầu hay câu chuyện tình bạn nhẹ nhàng, mà thay vào đó, những yếu tố tình cảm gia đình, hàng xóm láng giềng được đan xen với yếu tố tình yêu, tình bạn.
+                Ngay từ những tập đầu, bộ phim đã mang lại cho khán giả những tràn cười sảng khoái vì sự ngô nghê, ngốc nghếch của cô bạn Duk Sun, những màn pha trò đầy hài hước, nghịch ngợm của cậu bạn Dong Ryung, một anh chàng Jung Hwan (mặt chó) có ngoại hình không điển trai nhưng lại rất ân cần và chu đáo, một cậu bạn lớp trưởng Sun Woo đẹp trai và là hình tượng của bao cô gái, cùng cậu kỳ thủ cờ vây Choi Taek lúc nào cũng cười và khờ khạo. 5 con người là sự tổ hợp của những tính cách khác nhau, thế mà lại hòa hợp một cách không thể ngờ như vậy.</i></p>  
+            </div>
+        </div>
+    </div>
+    <div id="ads">
+        <div class="dts">
+            <p>Nhãn hàng tài trợ</p>
+        </div>     
+    </div>
+    <div id="brands">
+        <img src="Anh Ads 5.png" alt="">
+        <img src="Anh Ads 3.jpg" alt="">
+        <img src="Anh Ads 4.jpg" alt="">
+        <img src="Anh Ads 2.png" alt="">
+        <img src="Anh Ads 1.png" alt="">
+    </div>
+    <div id="footer">
+        <div class="leftfooter">
+            <p>Trung tâm sản xuất phim truyện quốc gia Hàn Quốc-CuBe Entertainment</p>
+            <div class="line2">
+                <span class="fa fa-home"></span>
+                <p>Seongdong-gu,Gangnam street,Seoul,Korea</p>
+            </div>
+            <div class="line3">
+                <p>
+                <span class="fa fa-phone"></span>
+                <p>(91)25.33.350.350</p>
+                </p>
+                <p>
+                    <span class="fa fa-fax"></span>
+                    <p>(84)24.38.695.992</p>
+                </p>
+                <a href="">https://K-Drama.com/</a>
+            </div>
+        </div>
+        <div class="rightfooter">
+            <div class="line1">
+                <p>Cập nhật tin tức liên quan:</p>
+            </div>
+            <div class="line2">
+                <a href="" class="fa fa-facebook"></a>
+                <a href="" class="fa fa-youtube"></a>
+                <a href="" class="fa fa-twitter"></a>
+            </div>
+            <div class="line3">
+                <p>Contact gmail:</p><a href="">cube-entertainment@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
